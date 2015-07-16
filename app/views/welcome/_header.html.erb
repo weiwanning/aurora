@@ -16,7 +16,11 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'Login', root_path %></li>
+        <li><%= link_to 'About', welcome_about_path %></li>
+
+        <li><%= link_to "Login", new_user_session_path %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+
         <!-- TODO need to update login path -->
       </ul>
     </div><!-- /.navbar-collapse -->
