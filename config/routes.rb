@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   devise_for :users
   # get 'welcome/index'
 
@@ -8,8 +9,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   resources :articles
  
-  root 'welcome#index'
-  get 'welcome/about'
+  root 'home#index'
+  get 'home/about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
