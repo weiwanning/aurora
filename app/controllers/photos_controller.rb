@@ -1,30 +1,24 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
-  # GET /photos
-  # GET /photos.json
   def index
     @photos = Photo.all
   end
 
-  # GET /photos/1
-  # GET /photos/1.json
   def show
   end
 
-  # GET /photos/new
   def new
-    @photo = Photo.new
+    @photo = current_user.photos.build
   end
 
-  # GET /photos/1/edit
   def edit
   end
 
-  # POST /photos
-  # POST /photos.json
   def create
-    @photo = Photo.new(photo_params)
+    @photo = current_user.photos.build(photo_params)
 
     respond_to do |format|
       if @photo.save
@@ -67,8 +61,13 @@ class PhotosController < ApplicationController
       @photo = Photo.find(params[:id])
     end
 
+    def correct_user
+      @photo = current_user.photos.find_by(id: params[:id])
+      redirect_to photos_path, notice: "Not authorized to edit this photo" if @photo.nil?
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:photographer)
+      params.require(:photo).permit(:photographer, :image)
     end
 end

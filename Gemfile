@@ -26,8 +26,8 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'devise', '~> 3.5.1'
 gem 'rename'
 
-# Upload image
-gem 'carrierwave'
+gem 'paperclip', '~> 4.3.0'
+gem 'aws-sdk', '~> 2.1.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
