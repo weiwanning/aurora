@@ -1,4 +1,5 @@
-###Quick Start Dev
+Quick Start Dev
+===============
 * Install packages
 ```
 cd $root
@@ -10,5 +11,12 @@ bundle install
 rails server
 ```
 
-###Any Other Goods?
+Any Other Goods?
+================
 visit `www.wanning.co`
+
+TODO
+====
+* UI:
+ * Support infinite scroll
+ * Image switching in each unit
