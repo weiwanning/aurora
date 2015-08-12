@@ -14,7 +14,7 @@ rails s
 ```
 
 ###Any Other Goods?
-Try visiting http://www.wanning.co
+Try visiting [aurora](http://www.wanning.co)
 
 ###TODO
 * UI Improvement:
