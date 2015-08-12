@@ -1,12 +1,16 @@
+<%= render '/home/jumbo' %>
+
 <div id="photos" class="transitions-enabled">
-	<% @photos.each do |photo| %>
+	<% @users.each do |user| %>
 
 	<div class="box">
 		<div class="panel panel-default">
-  		<%= link_to image_tag(photo.image.url(:medium)), photo %><br/>
+			<% if user.photos.any? %>
+				<%= link_to image_tag(user.photos.first.image.url(:medium)), user %><br/>
+			<% end %>
 			<div class="panel-body">
 	    		<strong>Photographer:</strong>
-	    		<%= photo.user.email %><br/>
+	    		<%= link_to user.email, user %><br/>
     		</div>
   		</div>
 	</div>
