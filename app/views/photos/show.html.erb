@@ -9,8 +9,8 @@
 			</div>
 
 			<div class="panel-heading center">
-			  <strong>Photographer:</strong>
-			  <%= @photo.photographer %>
+			  <strong>Description:</strong>
+			  <%= @photo.description %>
 				<br/>
 				<% if @photo.user == current_user  %>
 					<%= link_to 'Edit', edit_photo_path(@photo) %>
