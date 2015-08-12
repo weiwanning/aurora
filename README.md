@@ -28,6 +28,7 @@ Try visiting [aurora](http://www.wanning.co)
  * ~~Use description instead of photographer for a photo~~
  * Add book feature (should just send an email)
  * Add search bar and search functionality
- * Large image instead of medium in personal page
+ * Large image instead of medium in personal page(p1)
  * Use user name instead of email
  * Add favicon.ico
+ * Detailed user profile, including gender, area, age
