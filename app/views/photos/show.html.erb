@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-	<div class="col-md-offset-2 col-md-8">
+	<div class="col-md-offset-0 col-md-12">
 
 		<div class="panel panel-default">
-			<div class="panel-heading center">
-				<%= image_tag @photo.image.url(:medium) %>
+			<div class="panel-heading center col-md-12">
+				<%= image_tag @photo.image.url, :class => "col-md-12" %>
 			</div>
 
 			<div class="panel-heading center">
