@@ -1,0 +1,15 @@
+  <header>
+    <div class="container" id="topsection">
+      <div class="intro-text">
+        <div class="intro-lead-ind"><h1>Welcome to Aurora!</h1></div>
+        <div class="intro-heading"><p>Find professional photographers here</p></div>
+        <% if user_signed_in? %>  
+            <%= link_to "Find More", photos_path, class: "btn btn-primary" %>
+
+          <% else %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %> 
+            <%= link_to "Discover", photos_path, class: "btn btn-default" %>
+          <% end %>
+      </div>
+    </div>
+  </header> 
