@@ -1,0 +1,24 @@
+<% if user_signed_in? %>
+	<section id="signinreminder">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 reminder-text">
+					<p><strong>now click on a photographer you are interested in ^ ^</strong></p>
+				</div><!-- col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+<% else %>
+	<section id="signinreminder">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<p><strong>sign in to write a start a photo trip</strong></p>
+				</div><!-- col -->
+				<div class="col-sm-4">
+					<%= link_to "Click here to Sign In", new_user_session_path, class:"btn btn-success btn-block", padding: "0 10px 0 0" %>
+				</div><!-- col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section>
+<% end %>

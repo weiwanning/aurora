@@ -7,7 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render 'home/header' %>
+
+<% if current_page?(root_path) %>
+	<%= render '/home/header' %>
+	<%= render '/home/topsection' %>
+	<%= render '/home/signup' %>
+<% else %>
+	<%= render '/home/otherheaders' %>
+<% end %>
 
 <div class="container">
 
