@@ -33,4 +33,7 @@ Try visiting [aurora](http://www.wanning.co)
  * Use user name instead of email
  * ~~Add favicon.ico~~
  * Detailed user profile, including gender, area, age
- * Forget email
+* Bug
+ * Upload succeeful alert notification
+ * Image carousel scroll should not repeating
+ * Forget password is not working
