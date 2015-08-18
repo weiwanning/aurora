@@ -8,82 +8,64 @@ $navbar-height: 40px;
 	text-align: center;
 }
 
-.navbar {
-	min-height: 50px;
-    margin-bottom: 20px;
-    text-color: #222;
-
-}
-
-.navbar-default {
+.navbar-homepage {
 	background-color: transparent;
 	padding: 10px 0;
 	transition: padding .3s;
-	border: 0;
-	border-color: transparent;
 	.navbar-nav > li > a {
 		color: #fff;
-		font-family: Lobster, cursive;
 		font-size: 16px;
-		font-weight: bold;
 		}
 	.navbar-header > a {
 		color: #fff;
-		font-family: Lobster, cursive;
 		font-size: 25px;
-		font-weight: bold;
 	}
 }
 
-.navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-    border-radius: 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.navbar-general {
+	background-color: #222;
+	padding: 10px 0;
+	transition: padding .3s;
+	.navbar-nav > li > a {
+		color: #fff;
+		font-size: 16px;
+		}
+	.navbar-header > a {
+		color: #fff;
+		font-size: 25px;
+	}
 }
 
 body {
 	margin-top:100px;
 }
+
 header {
 	margin-top: -100px;
-    background: url(/assets/sanfrancisco.jpg) no-repeat center center fixed;
-    background-attachment: scroll;
-    background-size: cover;
+  background: url(/assets/photography.jpg) no-repeat center center fixed;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 header {
 	.container {
-	    padding-right: 15px;
-	    padding-left: 15px;
-	    margin-right: auto;
-	    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 	}
 	.intro-text{
 		position: relative;
-		margin: 250px 0;
-    	color: #fff;
-    	text-align: center;
-    	position: relative;
-    	vertical-align: middle;
+		margin-top: 300px;
+		margin-bottom: 200px;
+  	color: #fff;
+  	text-align: center;
+  	position: relative;
+  	vertical-align: middle;
 	}	
-}
-
-#otherheaders {
-	background-color: #222;
 }
 
 #signinreminder {
 	background-color: #f2f0ea;
-	padding: 10px 0;
 	color: black;
-	font-size: 1.2em;
-
-	font-family: "Comic Sans MS", cursive, sans-serif;
-}
-#signinreminder .reminder-text {
-	text-align: center;
 }

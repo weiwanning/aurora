@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   get 'home/about'
   get '/' => 'users#index'
 
-  root 'users#index'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

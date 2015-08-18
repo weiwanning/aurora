@@ -8,12 +8,12 @@
 </head>
 <body>
 
-<% if current_page?(root_path) %>
-	<%= render '/home/header' %>
+<% if current_page?("/") %>
+	<%= render '/home/header_homepage' %>
 	<%= render '/home/topsection' %>
 	<%= render '/home/signup' %>
 <% else %>
-	<%= render '/home/otherheaders' %>
+	<%= render '/home/header' %>
 <% end %>
 
 <div class="container">
@@ -22,7 +22,7 @@
 	<%= content_tag(:div, msg, class: "alert alert-info") %>
 <% end %>
 
-  <%= yield %>
+<%= yield %>
 </div>
 
 </body>
