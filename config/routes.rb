@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :photos
   devise_for :users
- 
+  
   get '/users/:id', :to => 'users#show', :as => :user
   get 'home/about'
   get '/' => 'users#index'

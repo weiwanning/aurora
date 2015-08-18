@@ -7,3 +7,65 @@ $navbar-height: 40px;
 .center {
 	text-align: center;
 }
+
+.navbar-homepage {
+	background-color: transparent;
+	padding: 10px 0;
+	transition: padding .3s;
+	.navbar-nav > li > a {
+		color: #fff;
+		font-size: 16px;
+		}
+	.navbar-header > a {
+		color: #fff;
+		font-size: 25px;
+	}
+}
+
+.navbar-general {
+	background-color: #222;
+	padding: 10px 0;
+	transition: padding .3s;
+	.navbar-nav > li > a {
+		color: #fff;
+		font-size: 16px;
+		}
+	.navbar-header > a {
+		color: #fff;
+		font-size: 25px;
+	}
+}
+
+body {
+	margin-top:100px;
+}
+
+header {
+	margin-top: -100px;
+  background: url(/assets/photography.jpg) no-repeat center center fixed;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header {
+	.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	.intro-text{
+		position: relative;
+		margin-top: 300px;
+		margin-bottom: 200px;
+  	color: #fff;
+  	text-align: center;
+  	position: relative;
+  	vertical-align: middle;
+	}	
+}
+
+#signinreminder {
+	background-color: #f2f0ea;
+	color: black;
+}
